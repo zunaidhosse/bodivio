@@ -4,7 +4,7 @@
 
 **Bodivio** is a free, ad-free, and community-supported Progressive Web App (PWA) designed to be your ultimate fitness companion. Inspired by the ethos of DAREBEE.com, this platform provides accessible workouts, structured programs, nutritional guidance, and motivation without any cost or distractions.
 
-**[➡️ View Live Demo](https://your-username.github.io/your-repo-name/)** *(Replace with your actual GitHub Pages link after deployment)*
+**[➡️ View Live Demo](https://zunaidhosse.github.io/bodivio/)** *(Replace with your actual GitHub Pages link after deployment)*
 
 ---
 
