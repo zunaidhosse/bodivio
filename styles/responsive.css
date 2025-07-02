@@ -1,0 +1,45 @@
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--card-bg);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        gap: 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        padding: 1.5rem 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .hero h1 { font-size: 2rem; }
+    .hero p { font-size: 1rem; }
+    .section-title { font-size: 2rem; }
+    .footer-content { flex-direction: column; }
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+    }
+    .about-hero h1 { font-size: 2.5rem; }
+    .quote-content blockquote { font-size: 1.8rem; }
+    .collage-grid { grid-template-columns: 1fr; }
+}
+

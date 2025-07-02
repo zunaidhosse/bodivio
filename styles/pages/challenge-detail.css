@@ -1,0 +1,30 @@
+/* Challenge Detail Page Progress Bar */
+.progress-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: var(--light-gray);
+    border-radius: 8px;
+    text-align: center;
+}
+.progress-section h3 {
+    margin-bottom: 1rem;
+}
+.progress-bar-container {
+    width: 100%;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+.progress-bar-fill {
+    height: 100%;
+    width: 0%; /* JS will update this */
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+.progress-text {
+    font-weight: bold;
+    color: var(--dark-gray);
+}

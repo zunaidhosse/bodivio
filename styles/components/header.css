@@ -1,0 +1,131 @@
+/* Header & Navbar */
+header {
+    background: var(--card-bg);
+    box-shadow: var(--card-shadow);
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--secondary-color);
+    font-family: var(--font-heading);
+}
+.nav-logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+html[dir="rtl"] .nav-logo img {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: var(--text-color);
+    font-weight: 700;
+}
+.nav-link.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.install-btn {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+.nav-extra {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+#dark-mode-toggle .moon { display: none; }
+#dark-mode-toggle .sun { display: block; }
+.dark-mode #dark-mode-toggle .moon { display: block; }
+.dark-mode #dark-mode-toggle .sun { display: none; }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.language-switcher {
+    position: relative;
+}
+
+.lang-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--card-bg);
+    box-shadow: var(--card-shadow);
+    border-radius: 5px;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0 0;
+    min-width: 120px;
+    z-index: 1001;
+}
+
+.lang-menu.active {
+    display: block;
+}
+
+.lang-menu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    white-space: nowrap;
+}
+
+.lang-menu li a:hover {
+    background-color: var(--light-gray);
+}

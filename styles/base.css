@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #d90429;
+    --secondary-color: #2b2d42;
+    --accent-color: #8d99ae;
+    --light-gray: #edf2f4;
+    --dark-gray: #4a4a4a;
+    --background-color: #ffffff;
+    --text-color: #1a1a1a;
+    --card-bg: #fff;
+    --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    --border-color: #ddd;
+    --font-heading: 'Roboto', sans-serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+html[dir="rtl"] {
+    text-align: right;
+}
+
+html[dir="rtl"] .footer-section.links ul {
+    padding: 0;
+}
+
+html[dir="rtl"] .day-card-header {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .day-card-footer {
+    flex-direction: row-reverse;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.dark-mode {
+    --primary-color: #ef233c;
+    --secondary-color: #edf2f4;
+    --accent-color: #8d99ae;
+    --light-gray: #2b2d42;
+    --dark-gray: #a9a9a9;
+    --dark-gray-alt: #222436;
+    --background-color: #1a1a1a;
+    --text-color: #edf2f4;
+    --card-bg: #2b2d42;
+    --card-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    --border-color: #4a4a4a;
+}
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: opacity 0.2s ease-in-out;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main {
+    min-height: calc(100vh - 120px); /* 60px header, 60px footer */
+    padding: 2rem 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-secondary {
+    background: var(--accent-color);
+}
+
+.btn-secondary:hover {
+    background: var(--dark-gray);
+}

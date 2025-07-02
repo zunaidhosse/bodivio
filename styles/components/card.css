@@ -1,0 +1,75 @@
+.card {
+    background: var(--card-bg);
+    box-shadow: var(--card-shadow);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.card-description {
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+.tag {
+    background-color: var(--light-gray);
+    color: var(--secondary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* Horizontal Card for Workout of the Day */
+.wod-card-wrapper {
+    max-width: 800px;
+    margin: 2rem auto 0 auto;
+}
+.card-horizontal {
+    flex-direction: row;
+}
+.card-horizontal .card-image {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+    .card-horizontal {
+        flex-direction: column;
+    }
+    .card-horizontal .card-image {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.dark-mode .tag {
+    background-color: var(--dark-gray);
+    color: var(--text-color);
+}

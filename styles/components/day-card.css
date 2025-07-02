@@ -1,0 +1,67 @@
+/* Day Card (Program/Challenge Detail) */
+.program-days {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.day-card {
+    background: var(--light-gray);
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.day-card.rest-day {
+    background-color: var(--card-bg);
+}
+
+.day-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.day-number {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.day-card-header .day-title {
+     font-weight: bold;
+}
+
+.day-card-content {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+}
+.day-card-content a {
+    text-decoration: underline;
+}
+
+.day-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    user-select: none;
+}
+.day-card-footer input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.day-card.completed {
+    border-left: 5px solid var(--primary-color);
+    opacity: 0.8;
+}
+

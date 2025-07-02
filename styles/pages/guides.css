@@ -1,0 +1,26 @@
+/* Article/Guide Specific Styles */
+.article-container .article-content {
+    line-height: 1.8;
+}
+
+.article-content h3, .article-content h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.article-content p {
+    margin-bottom: 1rem;
+}
+
+.article-content ul {
+    list-style: disc;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.article-content li {
+    margin-bottom: 0.5rem;
+}
+
